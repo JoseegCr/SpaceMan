@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour{
     public float jumpForce = 6f;
     Rigidbody2D rigidBody;
 
+    public LayerMask groundMask;
+
     void Awake(){
         rigidBody = GetComponent<Rigidbody2D>();
     }
@@ -24,6 +26,23 @@ public class PlayerController : MonoBehaviour{
     }
 
     void Jump(){
-        rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        if(IsTouchingTheGround())
+        {
+            rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
     }
+
+    //Nos indica si el personaje está o no tocando el suelo
+    bool IsTouchingTheGround(){
+        if(Physics2D.Raycast(this.transform.position,
+                            Vector2.down,
+                            1.5f, 
+                            groundMask)){
+                //TODO: programar lógica de contacto con el suelo
+                return true;
+         }else{
+            //TODO: programar lógica de no contacto
+            return false;
+         }
+    }     
 }
