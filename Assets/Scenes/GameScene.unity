@@ -204,7 +204,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &679807433
+--- !u!1001 &1656377344
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -219,12 +219,12 @@ PrefabInstance:
     - target: {fileID: 1881057365714812133, guid: ff9a4fcba70971a44adee0e1a6254c01,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.16
+      value: -2.1428018
       objectReference: {fileID: 0}
     - target: {fileID: 1881057365714812133, guid: ff9a4fcba70971a44adee0e1a6254c01,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.99
+      value: -4.1120434
       objectReference: {fileID: 0}
     - target: {fileID: 1881057365714812133, guid: ff9a4fcba70971a44adee0e1a6254c01,
         type: 3}
@@ -270,11 +270,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataform-5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1881057365714812155, guid: ff9a4fcba70971a44adee0e1a6254c01,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff9a4fcba70971a44adee0e1a6254c01, type: 3}
@@ -336,7 +331,7 @@ MonoBehaviour:
   jumpForce: 6
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!1001 &4659715347312022419
 PrefabInstance:
   m_ObjectHideFlags: 0

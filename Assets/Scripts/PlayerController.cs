@@ -21,11 +21,13 @@ public class PlayerController : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        if(Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
-        Jump();
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)){
+            Jump();
+        }
     }
 
-    void Jump(){
+    void Jump()
+    {
         if(IsTouchingTheGround())
         {
             rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
