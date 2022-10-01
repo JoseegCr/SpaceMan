@@ -49,11 +49,9 @@ public class PlayerController : MonoBehaviour{
                             1.5f, 
                             groundMask)){
                 //TODO: programar lógica de contacto con el suelo
-            animator.enabled = true;
                 return true;
          }else{
             //TODO: programar lógica de no contacto
-            animator.enabled = false;
             return false;
          }
     }     
